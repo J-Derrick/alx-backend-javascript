@@ -10,10 +10,8 @@ class HolbertonCourse {
     }
 
     set name(value) {
-        if (typeof value !== 'string') {
-            throw new TypeError('Name must be a string');
-        }
-        this._name = value;
+        // Convert non-string values to string
+        this._name = typeof value === 'string' ? value : String(value);
     }
 
     get length() {
@@ -21,10 +19,8 @@ class HolbertonCourse {
     }
 
     set length(value) {
-        if (typeof value !== 'number') {
-            throw new TypeError('Length must be a number');
-        }
-        this._length = value;
+        // Convert non-number values to number
+        this._length = typeof value === 'number' ? value : Number(value);
     }
 
     get students() {
@@ -32,9 +28,8 @@ class HolbertonCourse {
     }
 
     set students(value) {
-        if (!Array.isArray(value)) {
-            throw new TypeError('Students must be an array');
-        }
-        this._students = value;
+        // Ensure value is an array
+        this._students = Array.isArray(value) ? value : [value];
     }
 }
+export default HolbertonCourse;
