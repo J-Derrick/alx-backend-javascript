@@ -610,6 +610,7 @@ Full example:
 > iterateThroughObject(reportWithIterator)
 'John Doe | Guillaume Salva | Kanye East | Jay Li'
 > 
+
 Execution:
 
 bob@dylan:~$ cat 101-main.js
@@ -630,6 +631,7 @@ const reportWithIterator = createIteratorObject(report);
 console.log(iterateThroughObject(reportWithIterator));
 
 bob@dylan:~$
+
 bob@dylan:~$ npm run dev 101-main.js 
 Bob | Jane | Sylvie
 bob@dylan:~$
