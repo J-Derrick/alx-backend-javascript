@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/J-Derrick/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/J-Derrick/alx-backend-javascript#readme"
+  "homepage": "https://github.com/J-Derrick/alx-backend-javascript#readme",
+  "dependencies": {
+    "chai": "^5.1.0"
+  }
 }
