@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/J-Derrick/alx-backend-javascript#readme",
   "dependencies": {
-    "chai": "^5.1.0"
+    "chai": "^5.1.0",
+    "sinon": "^17.0.1"
   }
 }
